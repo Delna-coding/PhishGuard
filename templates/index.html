@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHISHING DETECTOR</title>
+        <style>
+            body{
+                background: radial-gradient(circle,#111 0%,#000 100%);
+                font-family:'Times New Roman', Times, serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin:0;
+            }
+            .sub{color:#bdbdbd;
+            font-size: 16px;
+            margin-top:-10px;
+            margin-bottom:35px;}
+            .box{
+                background: #1b1b1b;
+                padding: 60px;
+                border-radius: 15px;
+                box-shadow: 0 0 20px red;
+                text-align: center;
+                width: 650px;
+            }
+            h1{
+                color:red;
+                font-size: 48px;
+                margin-bottom:20px;
+                font-family: 'Times New Roman', Times, serif;        }
+            p{
+                color:white;
+                font-size: 18px;
+            }
+            input{
+                width:90%;
+                padding:18px;
+                border: 2px solid red;
+                border-radius:8px;
+                background:black;
+                color:white;
+                font-size:16px;
+            }
+            button{
+                margin-top:20px;
+                padding: 16px 45px;
+                background: maroon;
+                color: white;
+                border:none;
+                border-radius:18px;
+                cursor:pointer;
+                box-shadow: 0 0 20px darkred;
+
+            }
+            button:hover{
+                background:darkred;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box">
+        <h1>PHISHING DETECTOR</h1>
+        <p class="sub">Detect malicious websites before you click</p>
+        <br><br>
+        <p>Enter the website URL</p>
+        <form action="/result" method="POST">
+        <input type="text" 
+               name="url"
+        placeholder="https://example.com"
+        required>
+        <br><br>
+<button type="submit">Check URL</button></form>
+</div>
+</body>
+</html>
